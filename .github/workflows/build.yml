@@ -22,7 +22,7 @@ jobs:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - uses: actions/checkout@v4
         with:
-          repository: https://github.com/microsoft/vscode.git
+          repository: microsoft/vscode
 
       - name: Setup Node.js environment
         uses: actions/setup-node@v4.0.2
