@@ -34,5 +34,11 @@ jobs:
           yarn install
 
       - name: Build
-        run: |
-          yarn compile-web
+        run: yarn compile-web
+
+      - name: Upload a Build Artifact
+        uses: actions/upload-artifact@v4.3.3
+        with:
+          name: Build Artifact
+          path: out/**/*
+      
